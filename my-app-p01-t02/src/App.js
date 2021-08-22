@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Card, Input } from "antd";
+import "antd/dist/antd.css";
+
+const x = 5;
+const y = 7;
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <Input></Input>
+      <Card title="Сложение">
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {x}+{y}={x + y}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </Card>
     </div>
   );
 }
